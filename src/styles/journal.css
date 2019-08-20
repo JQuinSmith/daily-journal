@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;  
+  font-family: 'Livvic', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.inner {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px grey;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+}
+
+.concept {
+    display: flex;
+    justify-content: center;
+}
+
+.entry {
+    display: flex;
+    justify-content: center;
+}
+
+.mood {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 15px;
+}
