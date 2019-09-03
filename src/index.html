@@ -8,48 +8,58 @@
     <link rel="stylesheet" href="styles/journal.css">
 </head>
     <body>
-        <div class="outer">
+        <div class="w3-container">
             <div class="inner">
                 <h1>Daily Journal</h1>
                 <form class="flex-form" action="">
+                       
                     <fieldset class="date">
-                        <label for="dateOfEntry">Date of Entry:</label>
-                        <input type="date" name="" id="">
-                    </fieldset>
-                <hr class="dateDiv">
+                            <label for="dateOfEntry">Date of Entry:</label>
+                            <input type="date" name="" id="">
+                        </fieldset>
 
-                    <fieldset class="concept">
-                        <label for="conceptsCovered">Concepts Covered:</label>
-                        <input type="text" name="" id="">
-                    </fieldset>
+                    <hr class="dateDiv">
 
-                <hr class="conceptDiv">
+                        <fieldset class="concept">
+                            <label for="conceptsCovered">Concepts Covered:</label>
+                            <input type="text" name="" id="">
+                        </fieldset>
 
-                    <fieldset class="mood">
-                        <label for="journalDate">Mood for the Day:</label>
-                        <select>
-                            <option value="sunny">Sunny</option>
-                            <option value="cloudy">Cloudy</option>
-                            <option value="rainy">Rainy</option>
-                            <option value="stormy">Stormy</option>
-                            <option value="foggy">Foggy</option>
-                            <option value="snowy">Snowy</option>
-                            <option value="Windy">Windy</option>
-                        </select>
-                    </fieldset>
+                    <hr class="conceptDiv">
 
-                <hr class="entryDiv">
+                        <fieldset class="mood">
+                            <label for="journalDate">Mood for the Day:</label>
+                            <select>
+                                <option value="sunny">Sunny</option>
+                                <option value="cloudy">Cloudy</option>
+                                <option value="rainy">Rainy</option>
+                                <option value="stormy">Stormy</option>
+                                <option value="foggy">Foggy</option>
+                                <option value="snowy">Snowy</option>
+                                <option value="Windy">Windy</option>
+                            </select>
+                        </fieldset>
 
-                    <fieldset class="entry">
-                            <label for="journalEntry">Journal Entry:</label>
-                            <textarea rows="4" cols="50"></textarea>
-                    </fieldset>
-                <div class="press">
-                    <button type="button">Record Journal Entry</button>
-                </div>
+                    <hr class="entryDiv">
+
+                        <fieldset class="entry">
+                                <label for="journalEntry">Journal Entry:</label>
+                                <textarea rows="4" cols="50"></textarea>
+                        </fieldset>
+                    <div class="press">
+                        <button type="button">Record Journal Entry</button>
+                    </div>
                 </form>
+                
             </div>
-        </div>    
+        </div>   
+        
+        <div class="history">
+            <h1 class="history">Journal Entries</h1>
+            <article class="entryLog">
+                
+            </article> 
+        </div> 
         <script src="scripts/journal.js"></script>
     </body>
 </html>
