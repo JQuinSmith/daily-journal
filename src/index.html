@@ -15,28 +15,28 @@
                        
                     <fieldset class="date">
                         <label for="dateOfEntry">Date of Entry:</label>
-                        <input type="date" name="" id="">
+                        <input type="date" name="" id="dateId">
                     </fieldset>
 
                     <hr class="dateDiv">
 
                         <fieldset class="concept">
                             <label for="conceptsCovered">Concepts Covered:</label>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="conceptId">
                         </fieldset>
 
                     <hr class="conceptDiv">
 
                         <fieldset class="mood">
-                            <label for="journalDate">Mood for the Day:</label>
-                            <select>
+                            <label for="journalMood">Mood for the Day:</label>
+                            <select id="moodId">
                                 <option value="sunny">Sunny</option>
                                 <option value="cloudy">Cloudy</option>
                                 <option value="rainy">Rainy</option>
                                 <option value="stormy">Stormy</option>
                                 <option value="foggy">Foggy</option>
                                 <option value="snowy">Snowy</option>
-                                <option value="Windy">Windy</option>
+                                <option value="windy">Windy</option>
                             </select>
                         </fieldset>
 
@@ -44,10 +44,10 @@
 
                         <fieldset class="entry">
                                 <label for="journalEntry">Journal Entry:</label>
-                                <textarea rows="4" cols="50"></textarea>
+                                <textarea rows="4" cols="50" id="entryId"></textarea>
                         </fieldset>
                     <div class="press">
-                        <button type="button">Record Journal Entry</button>
+                        <button id="submit-button" type="button">Record Journal Entry</button>
                     </div>
                 </form>
                 
