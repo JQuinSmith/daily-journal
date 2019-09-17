@@ -43,21 +43,22 @@ document.querySelector("#submit-button").addEventListener("click", () => {
         }
         
         /* Makes sure these characters are excluded when filling out each input field. */
-        if (journalConcept.includes("@", "#", "$", "%", "^") || journalEntry.includes("@", "#", "$", "%", "^")){
+         else if (journalConcept.includes("@", "#", "$", "%", "^") || journalEntry.includes("@", "#", "$", "%", "^")){
             alert("No special characters!");
-    }
-
+        
+        } else {
+        const newJournalEntryObj = makeJournalEntry(journalDate, journalConcept, journalMood, journalEntry)
+            /* The [API] is referencing the object that contains the "POST" fetch call [.postJournalEntry] from data.js. [newJournalEntryObj] is the variable that contains the information that was passed through the factory function [makeJournalEntry].  */
+            API.postJournalEntry(newJournalEntryObj)
+            .then(() => {API.getJournalEntries()
+                .then(res => addEntriesToDOM(res))})
+                    .then(() => {
+                        document.querySelector("#dateId").value = ""
+                        document.querySelector("#conceptId").value = ""
+                        document.querySelector("#moodId").value = ""
+                        document.querySelector("#entryId").value = "" }
+                    )
     /* newJournalEntryObj is the actual object that is formed from the values of the finput fields *- journalDate, journalConcept, journalMood, journalEntry -* */
-    const newJournalEntryObj = makeJournalEntry(journalDate, journalConcept, journalMood, journalEntry)
-
-    /* The [API] is referencing the object that contains the "POST" fetch call [.postJournalEntry] from data.js. [newJournalEntryObj] is the variable that contains the information that was passed through the factory function [makeJournalEntry].  */
-    API.postJournalEntry(newJournalEntryObj)
-    .then(() => {API.getJournalEntries()
-        .then(res => addEntriesToDOM(res))})
-            .then(() => {
-                document.querySelector("#dateId").value = ""
-                document.querySelector("#conceptId").value = ""
-                document.querySelector("#moodId").value = ""
-                document.querySelector("#entryId").value = ""
-            })
+            
+        }
 })

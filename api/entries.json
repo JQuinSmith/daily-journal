@@ -6,6 +6,13 @@
       "conceptsCovered": "no class-lab day",
       "moodOfTheDay": "Sunny",
       "entry": "Worked on the daily journal page with css. I also added css to the govtrack page."
+    },
+    {
+      "dateOfEntry": "2019-09-17",
+      "conceptsCovered": "Something new",
+      "moodOfTheDay": "sunny",
+      "entry": "Blue",
+      "id": 2
     }
   ]
 }
