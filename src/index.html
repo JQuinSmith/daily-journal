@@ -12,20 +12,20 @@
             <div class="inner">
                 <h1>Daily Journal</h1>
                 <form class="flex-form" action="">
-                       
+
                     <fieldset class="date">
                         <label for="dateOfEntry">Date of Entry:</label>
                         <input type="date" name="" id="dateId">
                     </fieldset>
 
-                    <hr class="dateDiv">
+                    <hr>
 
                         <fieldset class="concept">
                             <label for="conceptsCovered">Concepts Covered:</label>
                             <input type="text" name="" id="conceptId">
                         </fieldset>
 
-                    <hr class="conceptDiv">
+                    <hr>
 
                         <fieldset class="mood">
                             <label for="journalMood">Mood for the Day:</label>
@@ -40,7 +40,7 @@
                             </select>
                         </fieldset>
 
-                    <hr class="entryDiv">
+                    <hr>
 
                         <fieldset class="entry">
                                 <label for="journalEntry">Journal Entry:</label>
@@ -50,16 +50,34 @@
                         <button id="submit-button" type="button">Record Journal Entry</button>
                     </div>
                 </form>
-                
             </div>
-        </div>   
-        
+        </div>
+
+        <div class="radioMoodTitle">
+                <label class="filter">Filter Journals By Mood</label>
+        </div>
+        <div id="radioMoodContainer">
+                <label class="radioMood" for="Sunny">Sunny</label>
+                <input type="radio" id="radioMood" name="mood" value="Sunny"checked>
+                <label class="radioMood" for="Cloudy">Cloudy</label>
+                <input type="radio" id="radioMood" name="mood" value="Cloudy"checked>
+                <label class="radioMood" for="Rainy">Rainy</label>
+                <input type="radio" id="radioMood" name="mood" value="Rainy"checked>
+                <label class="radioMood" for="Stormy">Stormy</label>
+                <input type="radio" id="radioMood" name="mood" value="Stormy"checked>
+                <label class="radioMood" for="Foggy">Foggy</label>
+                <input type="radio" id="radioMood" name="mood" value="Foggy"checked>
+                <label class="radioMood" for="Snowy">Snowy</label>
+                <input type="radio" id="radioMood" name="mood" value="Snowy"checked>
+                <label class="radioMood" for="Windy">Windy</label>
+                <input type="radio" id="radioMood" name="mood" value="Windy"checked>
+              </div>
+
         <div class="history">
             <h1 class="history">Journal Entries</h1>
             <article class="entryLog">
-                
-            </article> 
-        </div> 
+            </article>
+        </div>
         <script src="scripts/journal.js" type="module"></script>
     </body>
 </html>

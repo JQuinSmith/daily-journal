@@ -8,11 +8,11 @@
       "entry": "Worked on the daily journal page with css. I also added css to the govtrack page."
     },
     {
-      "dateOfEntry": "2019-09-17",
-      "conceptsCovered": "Something new",
+      "dateOfEntry": "2019-09-30",
+      "conceptsCovered": "React - Deleting Components",
       "moodOfTheDay": "sunny",
-      "entry": "Blue",
-      "id": 2
+      "entry": "It's still hot. The AC might be out in our room again. Met our Cohort 36 sibs. Learned some stuff with deleting cards, lists, etc. in react.",
+      "id": 3
     }
   ]
 }
